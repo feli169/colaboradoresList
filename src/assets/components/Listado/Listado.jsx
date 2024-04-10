@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import "./Listado.css"
 
 const listado = ({ colaboradores, eliminarCola }) => {
@@ -7,7 +6,7 @@ const listado = ({ colaboradores, eliminarCola }) => {
     eliminarCola(id);
   };
   return (
-    <Fragment>
+    <div className="">
        {colaboradores.length === 0 ? (
         <h3>No hay registros</h3>
       ) : (
@@ -39,7 +38,7 @@ const listado = ({ colaboradores, eliminarCola }) => {
           </tbody>
         </table>
       )}
-    </Fragment>
+    </div>
   )
 }
 
