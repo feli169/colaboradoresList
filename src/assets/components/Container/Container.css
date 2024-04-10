@@ -1,0 +1,28 @@
+h1{
+    grid-area: title;
+}
+
+.search{
+    grid-area: buscador;
+}
+
+.form{
+    grid-area: form;
+    width: 500px;
+}
+
+.list{
+    grid-area: lista;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "title form"
+    "buscador form"
+    "lista form";
+    gap: 10px;
+    grid-template-rows: auto auto 50%;
+    grid-template-columns: 70% auto;
+}
